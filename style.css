@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    user-select: none;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+    gap: 40px;
+    background: linear-gradient(90deg, rgb(190, 146, 227) 0%, rgb(39, 78, 239) 79%);
+    background-size: cover;
+}
+
+
+.border{
+    border-bottom: 1px solid gray;
+    
+}
+
+body section:nth-of-type(1){
+   margin:40px;
+}
+
+body section:nth-of-type(3){
+    margin:60px;
+ }
+ 
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:250px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    
+    
+}
+
+
+.container h2:nth-of-type(1){
+    padding: 40px;
+    color: white;
+    font-size: 35px;
+
+}
+
+.container h2:nth-of-type(2){
+    padding: 10px;
+    color: black;
+    font-size:50px;
+
+}
+
+
+.container p{ 
+    width:200px;
+    padding:10px 0;
+    font-size:16px;
+    text-shadow: 0 0 1px  black;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+
+button{
+    width: 70%;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: yellow;
+    border: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+button img{
+    width:30px;
+}
+
+button img:nth-of-type(2){
+    width:10px;
+}
+
+
+.dog{
+    width:15px
+}
+.fish{
+    width:20px
+}
+
+
+button:hover{
+    background: rgb(228, 228, 10);
+    box-shadow: 0 0 5px rgb(228, 228, 10);
+    cursor: pointer;
+}
+
+@media (max-width:964px){
+    body{
+        margin-left:30px;
+       
+    }
+}
+
+@media (max-width:768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:0;
+    }
+
+    body section:nth-of-type(3){
+        margin-top:40px;
+    }
+}
